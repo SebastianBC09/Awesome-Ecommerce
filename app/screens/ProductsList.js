@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
-import Filter from './Filters'
-import Card from './ItemCard';
+import Filter from '../components/Filters'
+import Card from '../components/ItemCard';
 
 const ProductList = () => {
   return (
