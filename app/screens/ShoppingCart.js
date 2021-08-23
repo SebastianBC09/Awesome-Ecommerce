@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text } from 'react-native';
+import { View, StyleSheet, Text, ScrollView } from 'react-native';
 import ShoppingCard from '../components/ShoppingCard';
 import ShoppingBar from '../components/ShoppingBar';
 
@@ -7,21 +7,23 @@ import { Ionicons } from '@expo/vector-icons';
 
 const ShoppingCart = () => {
   return (
-    <View>
-      <ShoppingBar />
-      <View style={styles.discountMessage}>
-        <Text style={styles.message}>25% discount! Use the code "2018" at checkout.</Text>
-      </View>
-      <View style={styles.productContainer}>
-        <ShoppingCard />
-        <View style={styles.toolbar}>
-          <Text style={styles.total}>Total: $1.488.00</Text>
-          <Text style={styles.checkout}>
-            Checkout <Ionicons name="ios-chevron-forward" size={16} color="#2B65F9" />
-          </Text>
+    <ScrollView>
+      <View>
+        <ShoppingBar />
+        <View style={styles.discountMessage}>
+          <Text style={styles.message}>25% discount! Use the code "2018" at checkout.</Text>
+        </View>
+        <View style={styles.productContainer}>
+          <ShoppingCard />
+          <View style={styles.toolbar}>
+            <Text style={styles.total}>Total: $1.488.00</Text>
+            <Text style={styles.checkout}>
+              Checkout <Ionicons name="ios-chevron-forward" size={16} color="#2B65F9" />
+            </Text>
+          </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
