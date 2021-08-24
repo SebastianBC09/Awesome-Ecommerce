@@ -7,7 +7,7 @@ import ApplyFilters from './app/screens/ApplyFilters';
 export default function App() {
   return (
     <View>
-      <ApplyFilters />
+      <ProductList />
     </View>
   );
 };
