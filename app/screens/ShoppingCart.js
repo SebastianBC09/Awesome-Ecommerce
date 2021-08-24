@@ -1,11 +1,13 @@
 import React from 'react';
-import { View, StyleSheet, Text, ScrollView } from 'react-native';
+import { View, StyleSheet, Text, ScrollView, Dimensions } from 'react-native';
 import ShoppingCard from '../components/ShoppingCard';
 import ShoppingBar from '../components/ShoppingBar';
 
 import { Ionicons } from '@expo/vector-icons';
 
 const ShoppingCart = () => {
+  console.log(Dimensions.get('screen'))
+
   return (
     <ScrollView>
       <View>

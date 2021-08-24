@@ -3,7 +3,7 @@ import { View, StyleSheet, Text, Image, Button } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
 
-const image = require('../assets/Sony.png')
+const image = require('../assets/Sony.png');
 
 const ShoppingCard = () => {
   return (
