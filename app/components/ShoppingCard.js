@@ -1,7 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Text, Image, Button } from 'react-native';
-
-import { Ionicons } from '@expo/vector-icons';
+import { View, StyleSheet, Text, Image } from 'react-native';
 
 const image = require('../assets/Sony.png');
 
@@ -12,15 +10,6 @@ const ShoppingCard = () => {
       <Text style={styles.info}>Only for Sony Cameras</Text>
       <Text style={styles.price}>$372</Text>
       <Image style={styles.productImage} source={image} />
-      <View style={styles.buttons}>
-        <View style={styles.remove}>
-          <Ionicons name="ios-remove" size={24} color="black" />
-        </View>
-        <Text style={styles.quantity}>4</Text>
-        <View style={styles.add}>
-          <Ionicons name="ios-add" size={24} color="black" />
-        </View>
-      </View>
     </View>
   );
 };
@@ -28,7 +17,8 @@ const ShoppingCard = () => {
 const styles = StyleSheet.create({
   productCard: {
     width: 290,
-    height: 497,
+    height: 405,
+    justifyContent: 'center',
   },
   name: {
     alignSelf: 'center',
@@ -54,33 +44,6 @@ const styles = StyleSheet.create({
   productImage: {
     borderRadius: 15,
   },
-  buttons: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: 36,
-  },
-  remove: {
-    width: 60,
-    height: 60,
-    backgroundColor: '#F0F0F0',
-    borderRadius: 50,
-    justifyContent: 'center',
-    alignItems: 'center'
-  },
-  quantity: {
-    color: '#131314',
-    fontSize: 20,
-    fontWeight: 'bold',
-    alignSelf: 'center'
-  },
-  add: {
-    width: 60,
-    height: 60,
-    backgroundColor: '#F0F0F0',
-    borderRadius: 50,
-    justifyContent: 'center',
-    alignItems: 'center'
-  }
 })
 
 export default ShoppingCard;

@@ -3,7 +3,7 @@ import { View, StyleSheet, StatusBar, Text } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
 
-const ShoppingBar = () => {
+const ShoppingNavbar = () => {
   return (
     <View style={styles.navbarContainer}>
       <StatusBar style='auto' />
@@ -39,4 +39,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default ShoppingBar;
+export default ShoppingNavbar;
