@@ -3,7 +3,7 @@ import { View, StyleSheet } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
 
-const CheckButton = () => {
+const FilterApply = () => {
   return (
     <View style={styles.checkButton}>
       <Ionicons name="ios-checkmark" size={24} color="#FFF" />
@@ -23,4 +23,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default CheckButton;
+export default FilterApply;

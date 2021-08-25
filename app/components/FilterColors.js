@@ -3,7 +3,7 @@ import { View, StyleSheet, Text } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
 
-const Colors = () => {
+const FilterColors = () => {
   return (
     <View style={styles.colorsContainer}>
       <Text style={styles.title}>Color</Text>
@@ -71,4 +71,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Colors;
+export default FilterColors;

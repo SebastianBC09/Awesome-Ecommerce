@@ -1,22 +1,22 @@
 import React from 'react';
 import { View, StyleSheet, Button, ScrollView } from 'react-native';
-import PriceRange from '../components/PriceRange';
-import FiltersBar from '../components/FiltersBar';
-import Colors from '../components/Colors';
-import Sizes from '../components/Sizes';
-import Brand from '../components/Brand';
-import CheckButton from '../components/CheckButton';
+import FiltersNavbar from '../components/FiltersNavbar';
+import FilterSlider from '../components/FilterSlider';
+import FilterColors from '../components/FilterColors';
+import FilterSizes from '../components/FilterSizes';
+import FilterBrand from '../components/FilterBrand';
+import FilterApply from '../components/FilterApply';
 
 const ApplyFilters = () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <FiltersBar />
-        <PriceRange />
-        <Colors />
-        <Sizes />
-        <Brand />
-        <CheckButton />
+        <FiltersNavbar />
+        <FilterSlider />
+        <FilterColors />
+        <FilterSizes />
+        <FilterBrand />
+        <FilterApply />
       </View>
     </ScrollView>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
-const PriceRange = () => {
+const FilterSlider = () => {
   return (
     <View>
       <View style={styles.priceContainer}>
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
   },
 })
 
-export default PriceRange;
+export default FilterSlider;

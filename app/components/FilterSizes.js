@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native';
 
-const Sizes = () => {
+const FilterSizes = () => {
   return (
     <View style={styles.sizesContainer}>
       <Text style={styles.title}>Size</Text>
@@ -100,4 +100,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Sizes;
+export default FilterSizes;

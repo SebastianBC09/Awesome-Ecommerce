@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 
-const Brand = () => {
+const FilterBrand = () => {
   return (
     <View style={styles.brandContainer}>
       <Text style={styles.title}>Brand</Text>
@@ -39,4 +39,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default Brand;
+export default FilterBrand;

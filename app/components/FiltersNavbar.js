@@ -3,7 +3,7 @@ import { View, StyleSheet, StatusBar, Text } from 'react-native';
 
 import { Ionicons } from '@expo/vector-icons';
 
-const FiltersBar = () => {
+const FiltersNavbar = () => {
   return (
     <View style={styles.filterBar}>
       <StatusBar style='auto' />
@@ -38,4 +38,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default FiltersBar;
+export default FiltersNavbar;
